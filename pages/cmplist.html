@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>通用组件实现列表</title>
+  <link href="https://cdn.bootcss.com/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bikini.css">
+
+  <style>
+    .canvas-mask {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+
+    .hero-body h1 {
+      text-align: center;
+    }
+
+    .bg-canvas {
+      background: #393d49;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar is-primary">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html" target="_blank">
+          Meetfr.com
+        </a>
+      </div>
+
+      <div class="navbar-start">
+        <a class="navbar-item" href="../index.html">
+          回到首页
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="level is-relative">
+    <div class="canvas-mask" id="canvas-mask">
+    </div>
+    <canvas class="bg-canvas" id="canvas"></canvas>
+  </div>
+
+  </div>
+
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3"></div>
+      <div class="column is-6">
+        <div class="hero is-small is-dark is-bold">
+          <div class="hero-body">
+            <h1 class="title">Hello Componants</h1>
+          </div>
+        </div>
+        <div class="section">
+          <ul class="list is-bold">
+            <li class="list-item">
+              <span>01</span>
+              <a href="datetimepicker.html">Componant: DateTime Picker</a>
+            </li>
+            <li class="list-item">
+              <span>02</span>
+              <a href="">英格兰超级联赛夏季转会窗口即将关闭</a>
+            </li>
+            <li class="list-item">
+              <span>03</span>
+              <a href="">苏格拉底的申辩</a>
+            </li>
+            <li class="list-item">
+              <span>04</span>
+              <a href="">柏拉图的《理想国》</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column is-3"></div>
+    </div>
+  </div>
+
+
+  <script src="../js/canvas.js"></script>
+</body>
+
+</html>

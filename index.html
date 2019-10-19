@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>前端页面各个部件展示页面</title>
+  <link href="https://cdn.bootcss.com/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bikini.css">
+  <style>
+    .testwh {
+      background-color: lightgrey;
+      color: purple;
+      border-bottom: 5px solid #666;
+    }
+
+    .testwh:hover {
+      color: red;
+      border-color: currentColor;
+    }
+    .bg-canvas {
+      background: #393d49;
+    }
+    .wrap {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar is-primary">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          Meetfr.com
+        </a>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="testpages/cmplist.html">
+            组件实现中心
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-width-3" href="https://bulma.io/documentation/overview/start/">
+              Docs
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                Overview
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Modifiers
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                Columns
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                Layout
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                Form
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                Elements
+              </a>
+              <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                Components
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                  data-social-target="http://localhost:4000" target="_blank"
+                  href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Tweet
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-primary"
+                  href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
+                  <span class="icon">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero is-small">
+    <div class="hero-body">
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="list is-bold">
+      <li class="list-item">
+        <span>01</span>
+        <a href="">中国移动上八年营收利润双降</a>
+      </li>
+      <li class="list-item">
+        <span>02</span>
+        <a href="">英格兰超级联赛夏季转会窗口即将关闭</a>
+      </li>
+      <li class="list-item">
+        <span>03</span>
+        <a href="">苏格拉底的申辩</a>
+      </li>
+      <li class="list-item">
+        <span>04</span>
+        <a href="">柏拉图的《理想国》</a>
+      </li>
+      <li class="list-item">
+        <span>01</span>
+        <a href="">中国移动上八年营收利润双降</a>
+      </li>
+      <li class="list-item">
+        <span>02</span>
+        <a href="">英格兰超级联赛夏季转会窗口即将关闭</a>
+      </li>
+      <li class="list-item">
+        <span>03</span>
+        <a href="">苏格拉底的申辩</a>
+      </li>
+      <li class="list-item">
+        <span>04</span>
+        <a href="">柏拉图的《理想国》</a>
+      </li>
+      <li class="list-item">
+        <span>01</span>
+        <a href="http://">中国移动上八年营收利润双降</a>
+      </li>
+    </ul>
+
+    <div class="list">
+      <a href="" class="list-item">Hello 1</a>
+      <a href="" class="list-item">Hello 2</a>
+      <a href="" class="list-item">Hello 3</a>
+      <a href="" class="list-item">Hello 4</a>
+      <a href="" class="list-item">Hello 5</a>
+    </div>
+
+    <div class="info-list">
+      <div class="info-item is-small">
+        <div class="info-image">
+          <figure class="image is-3by2">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="info-content">
+          <h1>Hello world</h1>
+          <h1>Hello world</h1>
+          <h1>Hello world</h1>
+        </div>
+        <div class="info-image"></div>
+      </div>
+      <div class="info-item is-medium">
+        <div class="info-content">
+          <h1>Hello world</h1>
+        </div>
+        <div class="info-image">
+          <figure class="image is-3by2">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-content">
+          <h1>Hello world</h1>
+          <h1>Hello world</h1>
+          <h1>Hello world</h1>
+          <h1>Hello world</h1>
+        </div>
+        <div class="info-image">
+          <figure class="image is-3by2">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
+        </div>
+      </div>
+
+      <a href="#!" class="info-item">
+        <div class="info-content">
+          <h1>Hello world</h1>
+        </div>
+        <div class="info-image">
+          <figure class="image is-3by2">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
+        </div>
+      </a>
+    </div>
+
+    <div class="testwh is-height-5 is-width-3">
+      Hello currentColor!
+    </div>
+
+    <div class="section">
+      <div class="columns is-multiline">
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-code"></i>
+            </span>
+            Hello Coding
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-business-time"></i>
+            </span>
+            商务
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-spider"></i>
+            </span>
+            <span>爬虫</span>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-drafting-compass"></i>
+            </span>
+            Design
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-chess"></i>
+            </span>
+            Game Developer
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-coffee"></i>
+            </span>
+            Coffee
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-music"></i>
+            </span>
+            <span>
+              Music
+            </span>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="" class="sticky">
+            <span class="sticky-icon">
+              <i class="fas fa-book-reader"></i>
+            </span>
+            <span>个人发展</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3">
+        <nav class="panel">
+          <p class="panel-heading">
+            repositories
+          </p>
+          <div class="panel-block">
+            <p class="control has-icons-left">
+              <input class="input is-small" type="text" placeholder="search">
+              <span class="icon is-small is-left">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </span>
+            </p>
+          </div>
+          <p class="panel-tabs">
+            <a class="is-active">all</a>
+            <a>public</a>
+            <a>private</a>
+            <a>sources</a>
+            <a>forks</a>
+          </p>
+          <a class="panel-block is-active">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            bulma
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            marksheet
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            minireset.css
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            jgthms.github.io
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+            </span>
+            daniellowtw/infboard
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+            </span>
+            mojs
+          </a>
+          <label class="panel-block">
+            <input type="checkbox">
+            remember me
+          </label>
+          <div class="panel-block">
+            <button class="button is-link is-outlined is-fullwidth">
+              reset all filters
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="column is-3">
+        <aside class="menu">
+          <p class="menu-label">
+            General
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fas fa-anchor"></i></span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon"><i class="fas fa-globe"></i></span>
+                <span>Customers</span>
+              </a>
+            </li>
+          </ul>
+          <p class="menu-label">
+            Administration
+          </p>
+          <ul class="menu-list">
+            <li><a>Team Settings</a></li>
+            <li>
+              <a class="is-active">Manage Your Team</a>
+              <ul>
+                <li><a>Members</a></li>
+                <li><a>Plugins</a></li>
+                <li><a>Add a member</a></li>
+              </ul>
+            </li>
+            <li><a>Invitations</a></li>
+            <li><a>Cloud Storage Environment Settings</a></li>
+            <li><a>Authentication</a></li>
+          </ul>
+          <p class="menu-label">
+            Transactions
+          </p>
+          <ul class="menu-list">
+            <li><a>Payments</a></li>
+            <li><a>Transfers</a></li>
+            <li><a>Balance</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column is-6">
+        <div class="tabs is-boxed">
+          <ul>
+            <li class="is-active">
+              <a>
+                <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                <span>Pictures</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                <span>Music</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                <span>Videos</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                <span>Documents</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-4">
+        <article class="message">
+          <div class="message-header">
+            <p>Hello World</p>
+            <button class="delete" aria-label="delete"></button>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+            placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et
+            dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna,
+            vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </article>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">John Smith</p>
+                <p class="subtitle is-6">@johnsmith</p>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4"></div>
+    </div>
+
+  </div>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <a href="/pages/plaza.html">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <h3 class="title has-text-success">Javascript</h3>
+                </div>
+                <div class="content">
+                  <div class="is-height-3">
+                    凡是可以用 JavaScript 来写的应用，最终都会用 JavaScript 重写。
+                  </div>
+                  <br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="/pages/article.html">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <h3 class="title has-text-info">Python</h3>
+                </div>
+                <div class="content">
+                  <div class="is-height-3">
+                    Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。
+                    <br>
+                    <strong>人生苦短，我用 python.</strong>
+                  </div>
+                  <br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <h3 class="title has-text-warning">Django</h3>
+              </div>
+              <div class="content">
+                <div class="is-height-3">
+                  Django makes it easier to build better Web apps more quickly and with less code.
+                </div>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <h3 class="title has-text-danger">buzzfe</h3>
+              </div>
+              <div class="content">
+                <div class="is-height-3">
+                  毫无疑问，单身钻石王老五都渴望有娇妻相伴。
+                </div>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Primary title
+        </h1>
+        <h2 class="subtitle">
+          Primary subtitle
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="share">
+      <div class="share-item">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="share-item">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="share-item">
+        <i class="fab fa-tumblr"></i>
+      </div>
+      <div class="share-item">
+        <i class="fas fa-envelope"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <div class="message is-success">
+            <div class="message-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam praesentium, voluptate architecto sit
+              ipsa accusantium consectetur odit aliquam, repellat excepturi deserunt consequatur, molestias nobis
+              ratione autem iste pariatur optio voluptatem.
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="message is-success">
+            <div class="message-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam praesentium, voluptate architecto sit
+              ipsa accusantium consectetur odit aliquam, repellat excepturi deserunt consequatur, molestias nobis
+              ratione autem iste pariatur optio voluptatem.
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="message is-success">
+            <div class="message-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam praesentium, voluptate architecto sit
+              ipsa accusantium consectetur odit aliquam, repellat excepturi deserunt consequatur, molestias nobis
+              ratione autem iste pariatur optio voluptatem.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="smsg">
+        <div class="smsg-body">
+          读书的目的是为了能够很好的简介明了的描述一件事情，能够抓住重点的表达我们的思想。
+        </div>
+        <div class="delete">
+          X
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="goto-top">
+    <a class="button is-large is-primary" href="#topNav" title="回到顶部">
+      <span class="icon is-medium">
+        <i class="fas fa-arrow-up fa-lg"></i>
+      </span>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/canvas.js"></script>
+</body>
+
+</html>

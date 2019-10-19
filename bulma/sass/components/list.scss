@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+$list-background-color: $white !default;
+$list-shadow: 0 3px 6px rgba($dark, 0.15);
+$list-radius: $radius !default;
+
+$list-item-border: 1px solid $border !default;
+$list-item-color: $text !default;
+$list-item-active-background-color: $link !default;
+$list-item-active-color: $link-invert !default;
+$list-item-hover-background-color: $background !default;
+$list-item-hover-link-color: #ba2f7b;
+
+$info-height: $body-size * 6;
+$info-width: $body-size * 9;
+
+.list {
+  @extend %block;
+
+  background-color: $list-background-color;
+  border-bottom: 2px solid $border;
+
+  &.has-shadow {
+    box-shadow: $list-shadow;
+    border-radius: $list-radius;
+  }
+
+  .list-item {
+    display: block;
+    padding: 0.25em 0.5em;
+
+    &:not(:last-child) {
+      border-bottom: $list-item-border;
+    }
+
+    &:hover {
+      color: $list-item-hover-link-color;
+      border-bottom-color: currentColor;
+    }
+  }
+
+  &.is-bold {
+    .list-item {
+      line-height: 2;
+
+      span {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 300;
+        width: 40px;
+        color: #666;
+        cursor: default;
+      }
+
+      a {
+        font-size: 18px;
+        font-family: "Microsoft YaHei";
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.info-list {
+  @extend %block;
+
+  background-color: $list-background-color;
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: $list-radius;
+    padding: 0.5em 0.5em;
+
+    &:not(:last-child) {
+      border-bottom: $list-item-border;
+    }
+
+    &:hover {
+      border-bottom: none;
+      box-shadow: 0 3px 6px rgba(26, 26, 26, 0.15);
+    }
+
+    &.is-small {
+
+      .info-image {
+        flex-basis: $info-width * 0.75;
+        height: $info-height * 0.75;
+      }
+
+      .info-content {
+        height: $info-height * 0.75;
+      }
+    }
+
+    &.is-medium {
+
+      .info-image {
+        flex-basis: $info-width * 1.25;
+        height: $info-height * 1.25;
+      }
+
+      .info-content {
+        max-height: $info-height * 1.25;
+      }
+    }
+  }
+}
+
+.info-image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: $info-width;
+  height: $info-height;
+}
+
+.info-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0 1em;
+  overflow: hidden;
+}
+
+// 定义一些小的分类块
+.sticky {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75em 1em;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 2px rgba(20, 23, 28, .15);
+  font-size: 1em;
+
+  .sticky-icon {
+    margin-right: 0.75em;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $primary;
+  }
+}
+
+
+// 定义分享小组件
+$share-dimension: 48px !default;
+
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.at-left {
+    justify-content: flex-start;
+  }
+
+  &.at-right {
+    justify-content: flex-end;
+  }
+
+  &.is-small {
+    .share-item {
+      flex: 0 0 #{$share-dimension * 2 / 3};
+      height: $share-dimension * 2 / 3;
+      line-height: #{$share-dimension * 2 / 3};
+    }
+  }
+
+  &.is-round {
+    .share-item {
+      border-radius: $share-dimension / 2;
+      margin: 0 2px;
+    }
+  }
+
+  &.is-vertical {
+    position: absolute;
+    left: -#{$share-dimension * 2};
+    flex-direction: column;
+
+    .share-item {
+      width: $share-dimension;
+    }
+
+    &.is-small {
+      left: -#{$share-dimension * 3 / 2};
+
+      .share-item {
+        width: $share-dimension * 2 / 3;
+      }
+    }
+  }
+}
+
+.share-item {
+  flex: 0 0 $share-dimension;
+  background-color: $primary;
+  color: white;
+  text-align: center;
+  line-height: $share-dimension;
+  cursor: pointer;
+
+  &:hover {
+    background-color: tomato;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  }
+}

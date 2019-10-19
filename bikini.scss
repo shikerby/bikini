@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import url('https://fonts.font.im/css?family=Roboto');
+
+// 一个基于 flexbox 的现代迷你 css 框架. 模仿自 bulma
+// sass 文件夹的内容是根据项目需要封装的一些基本组件
+// 比如 分享功能组件
+// 一些固定高度类 
+// 还有一些补充 list 列表展示
+
+$family-sans-serif:"PingFang SC", "Roboto", "Segoe UI", "Microsoft JhengHei", "Microsoft Yahei", sans-serif;
+
+
+$purple: #ba2f7b;
+$green: #20a162;
+$orange: #fba414;
+$blue: Dodgerblue;
+$customColor: #f03752;
+$pink: #FA7C91;
+$brown: #0f1423;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$radius: 2px;
+$radius-large: 4px;
+
+// Update Bulma's global variables
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$warning: $orange;
+$info: $blue;
+$link-hover: $pink;
+
+// 某些组件的局部自定义
+$footer-background-color: $beige-lighter;
+$card-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+
+
+@import "bulma/bulma.scss"
