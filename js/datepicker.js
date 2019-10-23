@@ -91,7 +91,7 @@ Date.prototype.format = function (fmt) {
             month: month,
             days: ret,
         }
-
+        
         return data;
     };
 
