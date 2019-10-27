@@ -18,7 +18,6 @@ $info-width: $body-size * 9;
   @extend %block;
 
   background-color: $list-background-color;
-  border-bottom: 2px solid $border;
 
   &.has-shadow {
     box-shadow: $list-shadow;

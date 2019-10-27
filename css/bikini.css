@@ -336,7 +336,7 @@ body {
   color: #0f1423;
   font-size: 1em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 a {
@@ -7392,7 +7392,6 @@ button.dropdown-item.is-active {
 
 .list {
   background-color: white;
-  border-bottom: 2px solid #dbdbdb;
 }
 .list.has-shadow {
   box-shadow: 0 3px 6px rgba(54, 54, 54, 0.15);
