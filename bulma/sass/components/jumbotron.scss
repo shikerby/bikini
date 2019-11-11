@@ -1,0 +1,24 @@
+$jumbo-color: white !default;
+$jumbo-bgc: #343a40 !default;
+$jumbo-shadow: 0 2px 5px rgba($jumbo-bgc, .2);
+
+$jumbo-radius: 3px;
+
+
+.jumbotron {
+    padding: 20px;
+    border-radius: $jumbo-radius;
+    color: $jumbo-color;
+    background-color: $jumbo-bgc;
+    margin-bottom: 1.5rem;
+    h3 {
+        font-size: 35px;
+        font-weight: blod;
+    }
+
+    a {
+        color: white;
+        font-weight: blod;
+        font-size: 20px;
+    }
+}
