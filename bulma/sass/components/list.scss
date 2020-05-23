@@ -146,63 +146,45 @@ $info-width: $body-size * 9;
 // 定义分享小组件
 $share-dimension: 48px !default;
 
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 48px;
+}
+
 .share {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  min-width: 4 * $share-dimension;
 
-  &.at-left {
-    justify-content: flex-start;
-  }
-
-  &.at-right {
-    justify-content: flex-end;
-  }
-
-  &.is-small {
-    .share-item {
-      flex: 0 0 #{$share-dimension * 2 / 3};
-      height: $share-dimension * 2 / 3;
-      line-height: #{$share-dimension * 2 / 3};
-    }
-  }
-
-  &.is-round {
-    .share-item {
-      border-radius: $share-dimension / 2;
-      margin: 0 2px;
-    }
-  }
-
-  &.is-vertical {
-    position: absolute;
-    left: -#{$share-dimension * 2};
-    flex-direction: column;
-
-    .share-item {
-      width: $share-dimension;
-    }
-
-    &.is-small {
-      left: -#{$share-dimension * 3 / 2};
-
-      .share-item {
-        width: $share-dimension * 2 / 3;
-      }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      background-color: tomato;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
     }
   }
 }
 
-.share-item {
-  flex: 0 0 $share-dimension;
-  background-color: $primary;
-  color: white;
-  text-align: center;
-  line-height: $share-dimension;
-  cursor: pointer;
-
-  &:hover {
-    background-color: tomato;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+.liked-collected-ccount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 3 * $share-dimension;
+  .liked,
+  .collected,
+  .ccount{
+    cursor: pointer;
+    &:hover {
+      color: $primary;
+    }
   }
 }
